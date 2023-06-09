@@ -1,0 +1,78 @@
+.thum {
+  width: 100%;
+}
+
+.stat {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 8px;
+}
+
+.channel-image {
+  width: 36px;
+  border-radius: 20px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.name {
+  font-size: 12px;
+  color: gray;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.view {
+  margin-top: 5px;
+  font-size: 12px;
+  color: gray;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 8px;
+  padding: 20px;
+}
+
+
+@media(max-width:750px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 750px) and (max-width: 1100px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 1100px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+.video-preview {
+  position: relative;
+}
+
+.timer {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-size: 10px;
+  padding: 3px 3px 3px 3px;
+  border-radius: 2px;
+  font-weight: 500;
+}

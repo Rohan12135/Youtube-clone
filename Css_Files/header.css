@@ -1,0 +1,158 @@
+.header {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(214, 213, 213);
+  z-index: 100;
+}
+.left-section {
+  width: 175px;
+  display: flex;
+  align-items: center;
+}
+
+.header-image {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.youtube-image {
+  height: 20px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  height: 39px;
+  width: 66px;
+  background-color: white;
+  border: 1px solid rgb(158, 157, 157);
+  margin-left: -1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-btn,
+.voice-btn,
+.upload-btn,
+.gg-btn,
+.cc-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn .tooltip,
+.voice-btn .tooltip,
+.upload-btn .tooltip,
+.gg-btn .tooltip,
+.cc-btn .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-btn:hover .tooltip,
+.voice-btn:hover .tooltip,
+.gg-btn:hover .tooltip,
+.cc-btn:hover .tooltip,
+.upload-btn:hover .tooltip {
+  opacity: 1;
+}
+
+.search-btn:hover {
+  background-color: rgb(203, 219, 233);
+}
+.voice-btn {
+  height: 40px;
+  width: 40px;
+  margin-left: 8px;
+  border-radius: 23px;
+  border: none;
+  background-color: white;
+  margin-top: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-bar {
+  flex: 1;
+  height: 35px;
+  border: 1px solid rgb(158, 157, 157);
+  color: rgb(168, 167, 167);
+  padding-left: 10px;
+  /* border-radius: 2px; */
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+  width: 0;
+}
+
+.search-bar::placeholder {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.search-icon {
+  height: 25px;
+}
+
+.voice-icon {
+  height: 25px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  width: 182px;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.upload-icon,
+.apps-icon,
+.notifications-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.rohan-icon {
+  border-radius: 23px;
+  cursor: pointer;
+}
+
+.three {
+  background-color: #cc0000;
+  border-radius: 80px;
+  position: absolute;
+  color: white;
+  border: none;
+  font-size: 10px;
+  padding: 0 5px;
+  right: 54px;
+  top: 18px;
+}
